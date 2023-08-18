@@ -1,14 +1,17 @@
 #include "main.h"
 
 /**
- * mul - input
- * Description: multiplies 2 numbers
- * @a: first number
- * @b: second number
- * Return: the answer
+ * _isdigit - input
+ *
+ * Description: define if a character is a number
+ * @c: charater
+ * Return: 1 yes 0 no
  */
 
-int mul(int a, int b)
+int _isdigit(int c)
 {
-	return (a * b);
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }
